@@ -32,17 +32,17 @@ const customModalShow = ref(false);
   </div>
   <Modal v-model="defaultModalShow"/>
   <Modal v-model="customModalShow">
-    <template #header>
+    <template v-slot:header>
       <h4 class="bg-black text-lg text-white text-center">
         カスタムモーダルのヘッダーです
       </h4>
     </template>
-    <template #main>
+    <template v-slot:main>
       <div class="h-full bg-amber-50 text-center">
         カスタムモーダルのメインです
       </div>
     </template>
-    <template #footer>
+    <template v-slot:footer>
       <div class="text-center">
         <button class="bg-red-500 hover:bg-red-400 text-white rounded px-4 py-2" @click="customModalShow = false">カスタムモーダルを閉じる</button>
       </div>
