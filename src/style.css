@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#app {
+    /* @applyを使って、tailwindのclassをcss内に適用することもできます */
+    @apply flex flex-row w-full h-screen;
+}
