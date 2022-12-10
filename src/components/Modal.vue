@@ -12,10 +12,10 @@ const emits = defineEmits(['update:modelValue']);
       <div v-if="modelValue" class="modal-mask">
         <div class="modal-container">
           <div class="basis-8">
-            <slot name="header">モーダルのヘッダーです</slot>
+            <slot name="header">デフォルトモーダルのヘッダーです</slot>
           </div>
           <div class="flex-1 overflow-y-auto">
-            <slot name="main">モーダルのメインです</slot>
+            <slot name="main">デフォルトモーダルのメインです</slot>
           </div>
           <hr>
           <div class="basis-10">
