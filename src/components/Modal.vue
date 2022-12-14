@@ -1,6 +1,6 @@
 <script setup>
 defineProps({
-  modelValue: Boolean
+  modelValue: Boolean,
 });
 
 const emits = defineEmits(['update:modelValue']);
@@ -21,7 +21,7 @@ const emits = defineEmits(['update:modelValue']);
           <div class="basis-10">
             <slot name="footer">
               <div class="text-right">
-                <button class="bg-gray-500 hover:bg-gray-400 text-white rounded px-4 py-2" @click="emits('update:modelValue', false)">
+                <button class="bg-gray-500 hover:bg-gray-400 text-white rounded px-4 py-2" @click="emits('update:modelValue')">
                   閉じる
                 </button>
               </div>
